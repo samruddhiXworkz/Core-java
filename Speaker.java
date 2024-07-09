@@ -18,7 +18,7 @@ class Speaker{
    System.out.println("Start of turnOff");
    
    if(isConnected == true){
-   isConnected=false;
+   isConnected= false;
    System.out.println("Speaker is Turned off...");
    }
    System.out.println("End of turnOff");
