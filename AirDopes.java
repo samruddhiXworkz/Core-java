@@ -13,8 +13,8 @@ class AirDopes{
   public static void turnOff(){
   System.out.println("start of turnOff");
   
-  if(isConnected==false){
-    isConnected=true;
+  if(isConnected==true){
+    isConnected=false;
 	System.out.println("AirDopes is turnOff....");
   }
   System.out.println("end of turnOff");
