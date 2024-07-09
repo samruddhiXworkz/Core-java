@@ -12,7 +12,9 @@ class Alexa{
 	  System.out.println("The Alexa is off...");
 	  }
  System.out.println("end of onOrOff");
- return isConnected;
+ }
+ 
+ return isConnected ;
  }
 
 }
