@@ -1,31 +1,53 @@
 class Speaker{
-   //on(),off(),increaseVolume(),decreaseVolume() 
-   static boolean isConnected = false;
+   //on(),off(),increaseVolume(),decreaseVolume()
+   static boolean isConnected= false;
+   static int  maxVolume=7;
+   static int currentVolume;
+   static int minVolume;
+  
    
+   public static boolean onOrOff(){
+   System.out.println("start of onOrOff");
+   /*ref=condition ? value1:value2;
+   isConnected=(isConnected==false) ? true :false ;*/
    
-   public static void turnOn(){
-   System.out.println("Start of turnOn");
-   
-   if(isConnected == false){
-      isConnected=true;
-	  System.out.println("Speaker is Turned on....");
-   }
-   System.out.println("End of turnOn");
-   return ;
-   }
-   
-   public static void turnOff(){
-   System.out.println("Start of turnOff");
-   
-   if(isConnected == true){
-   isConnected= false;
-   System.out.println("Speaker is Turned off...");
-   }
-   System.out.println("End of turnOff");
-   return ;
+   if(!isConnected) isConnected=true;	   
+  else if(isConnected)isConnected=false;
+   System.out.println("end of onOrOff");
+	return isConnected ;  
    }
    
-    
-
-
+ //increaseVolume
+ public static void increaseVolume(){
+   System.out.println("start increase Volume ");
+   if(isConnected=true){
+	   if(currentVolume<maxVolume){
+	   currentVolume=currentVolume+1;
+	   System.out.println("the current Volume is :"+currentVolume);
+	   }else{
+		   System.out.println("maxVolume is reached");
+		   
+	   }
+   } else{
+	   System.out.println("gube Speaker connect madu:");
+      System.out.println("end increase Volume ");
+    return ;
+   }
+ }  
+ public static void decreaseVolume(){
+	 System.out.println("start decrease Volume");
+	 if(isConnected=true){
+	 if(currentVolume>minVolume){
+		 currentVolume=currentVolume-1;
+		 System.out.println("the current Volume is :"+currentVolume);
+	 }else{	 
+		 System.out.println("min Volume reached");
+		 
+	 } 
+	 }else{
+		 System.out.println("gube Speaker connect madu:");
+		 System.out.println("end decrease Volume");
+		 return;
+	 }
+   }
 }

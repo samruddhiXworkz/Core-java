@@ -1,12 +1,29 @@
 class AlexaRunner{
-  public static void main(String alexa[]){
-  System.out.println("main started");
-   Alexa.turnOn();
-   Alexa.turnOn();
-   Alexa.turnOff();
-   Alexa.turnOff();
+  public static void main(String sonata[]){
+  System.out.println("Main started");
+  boolean connect=Alexa.onOrOff();
+  System.out.println("is Alexa is connect :"+connect);
   
-  System.out.println("main ended");
+      Alexa.increaseVolume();
+      Alexa.increaseVolume();
+	  Alexa.increaseVolume();
+      Alexa.increaseVolume();
+      Alexa.increaseVolume();
+      Alexa.increaseVolume();
+      Alexa.increaseVolume();
+      Alexa.increaseVolume();
+      
+	  
+	  Alexa.decreaseVolume();
+      Alexa.decreaseVolume();
+      Alexa.decreaseVolume();
 
-}
+  
+  
+     connect=Alexa.onOrOff();
+	 System.out.println("is Alexa is connect: "+connect);
+     System.out.println("Main ended");
+
+  }
+
 }
