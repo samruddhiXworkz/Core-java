@@ -1,88 +1,58 @@
 class Zomato{
-public static double getFoodPricebyName(String foodName){
+	public static double getFoodPricebyName(String foodName){
  double foodPrice=0.0;
  System.out.println("start of getFoodPricebyName");
  
- if(foodName=="Dal Fry"){
- foodPrice=180.00;
- return foodPrice;
+ if(foodName=="Dal Fry") return foodPrice=180.00;
+ if(foodName=="Green peas masala") return foodPrice=190.00;
+ if(foodName=="Palak") return foodPrice=280.00;
+ if(foodName=="Vegitable Makkanvala") return foodPrice=330.00;
+ if(foodName=="Mashroom masala") return foodPrice=480.00;
+ if(foodName=="tamoto masala") return foodPrice=140.00;
+ if(foodName=="Green peas masala") return foodPrice=100.00;
+ if(foodName=="Gobii chilli") return foodPrice=280.00;
+ if(foodName=="Gobii Paper Dry") return foodPrice=180.00;
+ if(foodName=="Baby corn chilli")return foodPrice=300.00;
+ if(foodName=="salad") return foodPrice=80.00;
+ if(foodName=="Green peas paper Dry") return foodPrice=190.00;
+ if(foodName=="Mashroom paper Dry") return foodPrice=280.00;
+ if(foodName=="Fish sardien")return foodPrice=480.00;
+ if(foodName=="Fish bangada")return foodPrice=340.00;
+ if(foodName=="Fish chilly")return foodPrice=480.00;
+ if(foodName=="Fish kabab")return foodPrice=230.00;
+ if(foodName=="crab Fry")return foodPrice=110.00;
+ if(foodName=="Fish Fry")return foodPrice=450.00;
+ if(foodName=="crab chilli") return foodPrice=390.00;
+ else{
+ System.out.println(foodName+"not found");
  }
- if(foodName=="Green peas masala"){
- foodPrice=190.00;
+ System.out.println("End of getFoodPricebyName");
  return foodPrice;
- }
- if(foodName=="Palak"){
- foodPrice=280.00;
- return foodPrice;
- }
- if(foodName=="Vegitable Makkanvala"){
- foodPrice=330.00;
- return foodPrice;
- }
- if(foodName=="Mashroom masala"){
- foodPrice=480.00;
- return foodPrice;
- }
- if(foodName=="tamoto masala"){
- foodPrice=140.00;
- return foodPrice;
- }
- if(foodName=="Green peas masala"){
- foodPrice=100.00;
- return foodPrice;
- }
- if(foodName=="Gobii chilli"){
- foodPrice=280.00;
- return foodPrice;
- }
- if(foodName=="Gobii Paper Dry"){
- foodPrice=180.00;
- return foodPrice;
- }
- if(foodName=="Baby corn chilli"){
- foodPrice=300.00;
- return foodPrice;
- }
- if(foodName=="salad"){
- foodPrice=80.00;
- return foodPrice;
- }
- if(foodName=="Green peas paper Dry"){
- foodPrice=190.00;
- return foodPrice;
- }
- if(foodName=="Mashroom paper Dry"){
- foodPrice=280.00;
- return foodPrice;
- }
- if(foodName=="Fish sardien"){
- foodPrice=480.00;
- return foodPrice;
- }
- if(foodName=="Fish bangada"){
- foodPrice=340.00;
- return foodPrice;
- }
- if(foodName=="Fish chilly"){
- foodPrice=480.00;
- return foodPrice;
- }
- if(foodName=="Fish kabab"){
- foodPrice=230.00;
- return foodPrice;
- }
- if(foodName=="crab Fry"){
- foodPrice=110.00;
- return foodPrice;
- }
- if(foodName=="Fish Fry"){
- foodPrice=450.00;
- return foodPrice;
- }
- if(foodName=="crab chilli"){
- foodPrice=390.00;
- return foodPrice;
- }
+}
+public static double getFoodPricebyQuantity(String foodName,int qnty){
+ double foodPrice=0.0;
+ System.out.println("start of getFoodPricebyQuantity");
+ 
+ if(foodName=="Dal Fry") return foodPrice=180.00*qnty;
+ if(foodName=="Green peas masala") return foodPrice=190.00*qnty;
+ if(foodName=="Palak") return foodPrice=280.00*qnty;
+ if(foodName=="Vegitable Makkanvala") return foodPrice=330.00*qnty;
+ if(foodName=="Mashroom masala") return foodPrice=480.00*qnty;
+ if(foodName=="tamoto masala") return foodPrice=140.00*qnty;
+ if(foodName=="Green peas masala") return foodPrice=100.00*qnty;
+ if(foodName=="Gobii chilli") return foodPrice=280.00*qnty;
+ if(foodName=="Gobii Paper Dry") return foodPrice=180.00*qnty;
+ if(foodName=="Baby corn chilli")return foodPrice=300.00*qnty;
+ if(foodName=="salad") return foodPrice=80.00*qnty;
+ if(foodName=="Green peas paper Dry") return foodPrice=190.00*qnty;
+ if(foodName=="Mashroom paper Dry") return foodPrice=280.00*qnty;
+ if(foodName=="Fish sardien")return foodPrice=480.00*qnty;
+ if(foodName=="Fish bangada")return foodPrice=340.00*qnty;
+ if(foodName=="Fish chilly")return foodPrice=480.00*qnty;
+ if(foodName=="Fish kabab")return foodPrice=230.00*qnty;
+ if(foodName=="crab Fry")return foodPrice=110.00*qnty;
+ if(foodName=="Fish Fry")return foodPrice=450.00*qnty;
+ if(foodName=="crab chilli") return foodPrice=390.00*qnty;
  else{
  System.out.println(foodName+"not found");
  }
