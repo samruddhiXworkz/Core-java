@@ -4,11 +4,18 @@ class XworkzRegistaration{
    static String surname;
    static String dob;
    static String caste;
-   static int percent;
    static String date0fSubmission;
+ 
  
  public static boolean createStudent(String firstName,String middleName,String lastname,String dateOfBirth,String relign,String date){
    boolean isXworkzRegistaration=false;
+    boolean isvalidUserDetails=validUserDetails(firstName,middleName,lastname,dateOfBirth,relign,date);
+	return isXworkzRegistaration;
+ 
+ }
+ public static boolean validUserDetails(String firstName,String middleName,String lastname,String dateOfBirth,String relign,String date){
+	 
+ boolean isvalidUserDetails=false;
    boolean isFirstNameValid=false;
    boolean isMiddleNameValid=false;
    boolean isLastNameValid=false;
@@ -47,10 +54,12 @@ class XworkzRegistaration{
 	isDateValid=true;
 	}else
 	   System.out.println("the Date is Invalid");
-   
-	isXworkzRegistaration=true;
-	return isXworkzRegistaration;
- 
+    if(isFirstNameValid==true &&isMiddleNameValid==true && isLastNameValid==true &&isDateOfBirthValid==true && isRelignValid==true && isDateValid==true){
+		
+	isvalidUserDetails=true;
+	}
+	return isvalidUserDetails;
+	 
  }
   public static void readDetails(){
   System.out.println("feathing student details ..");

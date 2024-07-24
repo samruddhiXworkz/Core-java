@@ -8,8 +8,13 @@
 
 	public static boolean createAccount(String emailIn, String setPasswordIn, String nameIn , String dobIn , String genderIn){
 		System.out.println("Creating account...");
+	    boolean isAccountCreated = false;
+		isAccountCreated=validateUserDeatails(emailIn,setPasswordIn,nameIn,dobIn,genderIn);
+     return isAccountCreated;
 		
-		boolean isAccountCreated = false;
+	}
+	public static boolean validateUserDeatails(String emailIn, String setPasswordIn, String nameIn , String dobIn , String genderIn){
+		boolean isvalidateUserDeatails=false;
 		boolean isEmailValid=false;
 		boolean isSetPasswordInValid=false;
 		boolean isNameInValid=false;
@@ -40,14 +45,16 @@
 	    isGenderInValid=true;
 	    }else
 		System.out.println("the gender is Invalid");
-       if(isEmailValid==true&&isSetPasswordInValid==true&&isNameInValid==true&&isDobInValid==true&& isGenderInValid==true)
-		isAccountCreated=true;
-		return isAccountCreated;
+	
+       if(isEmailValid==true&&isSetPasswordInValid==true&&isNameInValid==true&&isDobInValid==true&& isGenderInValid==true){
+	  isvalidateUserDeatails=true;
+   
+	   }
+		return isvalidateUserDeatails;
 	}
 	
 	public static void readData(){
 		System.out.println("fetching details...");
-		
 		System.out.println("email: "+email);
 		System.out.println("password: "+setPassword);
 		System.out.println("name: "+name); 

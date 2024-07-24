@@ -15,6 +15,12 @@ static String edu;
 public static boolean createLinkedlnAccount(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,int pinCode,String company, String title, String industry,String education){
 	
 	boolean isLinkedlnCreated = false;
+	boolean isvalidUserDeatails=validUserDeatails(firstName,lastName,emailId,pwd,confirmPwd,country,pinCode,company,title,industry,education);
+	
+	return isLinkedlnCreated;
+}
+public static boolean validUserDeatails(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,int pinCode,String company, String title, String industry,String education){
+	boolean isvalidUserDeatails=false;
 	boolean isFirstNameValid=false;
 	boolean isLastNameValid=false;
 	boolean isEmailIdValid=false;
@@ -81,9 +87,10 @@ public static boolean createLinkedlnAccount(String firstName, String lastName,St
 	isEducationValid=true;
 	}else
 		System.out.println("the Education is Invalid");
-	if(isFirstNameValid==true && isLastNameValid==true && isEmailIdValid==true && isPwdValid==true &&isConfirmPwdValid==true && isCountryValid==true && isPincodeValid==true && isCompanyValid==true &&isTitleValid==true && isEducationValid==true)
-	isLinkedlnCreated = true;
-	return isLinkedlnCreated;
+	if(isFirstNameValid==true && isLastNameValid==true && isEmailIdValid==true && isPwdValid==true &&isConfirmPwdValid==true && isCountryValid==true && isPincodeValid==true && isCompanyValid==true &&isTitleValid==true && isEducationValid==true){
+		isvalidUserDeatails=true;
+	}
+	return isvalidUserDeatails;
 }
     
 	public static void readLinkedlnAccount(){

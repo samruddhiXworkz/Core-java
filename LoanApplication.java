@@ -9,7 +9,12 @@
 	
 	 public static boolean createLoanAccount(String creditScore , String loanType , String loanApplicantName , String bankName , String rateOfInterest , String yearsOfLoan){
 		boolean isLoanCreated = false;
-		
+		boolean isValidateUserDetails=validateUserDetails(creditScore,loanType,loanApplicantName,bankName,rateOfInterest,yearsOfLoan);
+			
+		return isLoanCreated;
+	}
+	public static boolean validateUserDetails(String creditScore , String loanType , String loanApplicantName , String bankName , String rateOfInterest , String yearsOfLoan){
+	    boolean isValidateUserDetails=false;
 		boolean iscreditScoreValid = false;
 		boolean isloanTypeValid = false;
 		boolean isloanApplicantNameValid = false;
@@ -66,11 +71,12 @@
 		
 		
 		if( iscreditScoreValid == true && isloanTypeValid == true && isloanApplicantNameValid== true && isbankNameValid== true && israteOfInterestValid == true && isyearsOfLoanValid== true){
-			isLoanCreated = true;
+			isValidateUserDetails= true;
 		}
-		return isLoanCreated;
+		return isValidateUserDetails;
+		
+		
 	}
-	
 	public static void readLoanAccount(){
 		
 		System.out.println("Loan Application");

@@ -9,6 +9,12 @@ class KVGBank{
   static String date;
   public static boolean createUserDetails(String fname,String mname,String lname,String dateofbirth,long adhar,long phoneNum,String add,String dt){
 	boolean isKVGBank=false;
+    boolean isValidUserDetailsValid=validUserDeatails(fname,mname,lname,dateofbirth,adhar,phoneNum,add,dt);
+	
+	return isKVGBank;
+  }
+  public static boolean validUserDeatails(String fname,String mname,String lname,String dateofbirth,long adhar,long phoneNum,String add,String dt){
+	boolean isValidUserDetailsValid=false;
 	boolean isfnameValid=false;
 	boolean ismnameValid=false;
 	boolean islnameValid=false;
@@ -60,8 +66,11 @@ class KVGBank{
 	}else
 		System.out.println("the date is invalid");
 	
-	isKVGBank=true;
-	return isKVGBank;
+	  if(isfnameValid==true&& ismnameValid==true&& islnameValid==true&&isdateofbirthValid==true&&isadharValid==true&&isaddValid==true&&isdtValid==true&&isphoneNumValid==true){
+	  isValidUserDetailsValid=true;
+	  }  	  
+	return isValidUserDetailsValid;  
+	  
   }
   
   public static void readUserDetails(){
@@ -72,7 +81,6 @@ class KVGBank{
 	System.out.println("feathing user lname is .."+surname);
     System.out.println("feathing user dateofbirth is .."+dob);
 	System.out.println("feathing user add is .."+address);
-
     System.out.println("feathing user adhar is .."+adharNum);
     System.out.println("feathing user phoneNum is .."+mobileNum);
   
