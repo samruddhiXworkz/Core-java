@@ -1,3 +1,4 @@
+
 class JuicePointRunner{
 public static void main(String juice[]){
 System.out.println("main Started");
@@ -18,6 +19,14 @@ System.out.println("main Started");
 	addJuice=JuicePoint.addJuiceName("jamun juice");
 	System.out.println("the juice added"+addJuice);
  JuicePoint.showDetails();
+ 
+    boolean updateJuice=JuicePoint.updateJuiceName("Mango juice","papaya Juice");
+	System.out.println("the juice name is updated "+updateJuice);
+	JuicePoint.showDetails();
+	
+	boolean deleteJuice=JuicePoint.deleteJuiceName("chikku juice");
+	System.out.println("the juice name delete"+deleteJuice);
+	JuicePoint.showDetails();
 System.out.println("main Ended");
 
 }

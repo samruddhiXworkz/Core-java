@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class AmezonRunner{
 
 public static void main(String product[]){
@@ -23,10 +24,14 @@ System.out.println("the main started");
    addProduct=Amezon.addProductName("Watch");
    System.out.println("the addProduct "+addProduct);
    addProduct=Amezon.addProductName("EarRing");
-   System.out.println("the addProduct "+addProduct);
-   
-   
+   System.out.println("the addProduct "+addProduct);  
  Amezon.readDetails();
+   boolean updateProduct=Amezon.updateProductName("Shoe","charger");
+   System.out.println("the updateProduct is"+updateProduct);
+   Amezon.readDetails();
+   boolean deleteProduct=Amezon.deleteProductName("Alexa");
+   System.out.println("the deleteProduct "+deleteProduct);
+   Amezon.readDetails();
 System.out.println("the main ended");
 
 }

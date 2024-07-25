@@ -27,6 +27,12 @@ System.out.println("the medicine added"+addmedicine);
 addmedicine=MedicalStore.addMadicineName("mupirocin");
 System.out.println("the medicine added"+addmedicine);
 MedicalStore.showDetails();
+boolean updateMedicine=MedicalStore.updateMedicineName("nicotine","painkiller");
+System.out.println("the medicine is updated "+updateMedicine);
+MedicalStore.showDetails();
+boolean deleteMedicine=MedicalStore.deleteMedicinName("Dabigatran");
+System.out.println("the medicine is delete "+deleteMedicine);
+MedicalStore.showDetails();
 System.out.println("End started");
 
 

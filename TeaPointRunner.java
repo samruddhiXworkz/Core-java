@@ -26,7 +26,13 @@ public static void main(String[] teaname){
 	 
 	 
     TeaPoint.showTeaNames();
-
+	boolean updateTea=TeaPoint.updateTeaName("masala tea", "chocklate tea");
+	System.out.println("update Tea name added"+updateTea);
+    TeaPoint.showTeaNames();
+	
+	boolean deleteTea=TeaPoint.deleteTeaName("lemon Tea");
+	System.out.println("tea name is deleted"+deleteTea);
+	TeaPoint.showTeaNames();
    System.out.println("The main Ended");
 
 

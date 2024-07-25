@@ -23,7 +23,12 @@ public static void main(String alchols[]){
   System.out.println("alchol added"+addAlchool);
   addAlchool=MRPStore.addAlcholName("Champange");
   System.out.println("alchol added"+addAlchool);
-  
+  MRPStore.showDetails();
+  boolean updatealchol=MRPStore.updateAlcholName("Brandy","golden green");
+  System.out.println("updatealchol"+updatealchol);
+  MRPStore.showDetails();
+  boolean deletealchol=MRPStore.deleteAlcholName("golden green");
+  System.out.println("deleteAlchol"+deletealchol);
   MRPStore.showDetails();
   System.out.println("main ended");
 

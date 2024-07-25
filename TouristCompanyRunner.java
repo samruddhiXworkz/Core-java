@@ -22,6 +22,12 @@ public static void main(String tourest[]){
     addTourist=TouristCompany.addTouristName("jyothirling");
    System.out.println("the tourest added"+addTourist);
    TouristCompany.showDetails();
+   boolean updateTourust=TouristCompany.updateTourustName("jagannat","Tirupati");
+   System.out.println("the update Tourust"+updateTourust);
+   TouristCompany.showDetails();
+   boolean deleteTourust=TouristCompany.deleteTourustName("Honnavar");
+   System.out.println("the delete Tourust"+deleteTourust);
+   TouristCompany.showDetails();
   System.out.println("main started");
 
 
