@@ -1,0 +1,102 @@
+1. 
+1.public static void main(String args[])
+
+public -->access Specifier.
+
+static-->non access Specifier.
+
+void--->return Type.
+
+main--->method Name.
+
+String args[]--->parameter.
+
+2.class and Object
+
+class--->it is template it is having State and Behavior, state is variable,behaviour is Method Name.
+
+Object---->it is instance of Class ,multiple copy . 
+
+3. JDK :it is a Development tool kit.it will use to compile a java code.that will having byte code.they will having jvm,set of libraries,jre,and development tool kit.
+    ex :compiler ,debugger
+    jdk =jre +development tool kit.
+    
+    JRE :it is component runtime environment provide by jvm and set of libraries.
+    Jre =jvm +set of lib.
+    
+    JVM: it is component that will provide a runtime environment.
+     load the code.
+     read the code.
+     verify the code line by line.
+     exicute the code.
+
+
+2.Constroctor:it is a special Type of method.it name same as class Name.it does not have return type.
+
+Two Type of Constroctor.
+
+A)default constroctor :passing zero argument parameter.
+
+B)Parameterized Constroctor :passing one or more Than one Parameter.
+
+
+3.keyword-->resurve word predefinened word,Specialword. Keyword having its own meaning & its own purpose. Keyword are written in lowercase.
+This()---> it is a special Type of keyword.come to the ambigius we used this keyword. This is replica of const.
+
+
+4.main method is static becouse-->without create object we call it.
+
+method :black of
+
+method 2 Types:
+
+a)Static Method :  it will be defined within the class.it belongs to class.
+
+b)non Static method: it will be defined within the class outside the main method.it belongs to object.
+
+
+5.java Class Loading-->
+
+
+6.reverce domain: create the project we used .domane pacakege because code readability.
+
+7. class Array{
+
+   static int array[]={12,3,2,45,6,7,6};
+
+   public static void main(String args[]){
+
+
+    system.out.println("The array length is "+index.length());
+}
+}
+
+or
+
+class Array{
+
+   static int array[]={12,3,2,45,6,7,6};
+
+   public static void main(String args[]){
+    
+     for(int i=o;i<array.length;i++){
+
+    int lengthOfarray=array.length
+    system.out.println(lengthofarray);
+}
+}
+}
+
+8.we can't use instance variable inside the static method. because in static method  does not create object.
+
+9.Polymorphism: object behave like a defferent at given instance of a time it is called polymorphisom.
+
+ex:Parentclass parentclass=new Childclass().
+
+10.Inheritance :process of priority for one class to other class .parent to child,super to sub class.
+
+
+ex: class  CMIHospital extends Hospital{
+}
+
+
